@@ -51,6 +51,6 @@ jobs:
         host: ${{ secrets.SSH_IP }}
         username: ${{ secrets.SSH_ID }}
         key: ${{ secrets.SSH_KEY }}
-        port: 8080
+        port: ${{ secrets.SSH_PORT }}
         script_stop: true
         script: "./startup.sh"
